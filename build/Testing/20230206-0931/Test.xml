@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="3193"
 	>
 	<Testing>
-		<StartDateTime>Feb 06 09:31 GMT Standard Time</StartDateTime>
-		<StartTestTime>1675675876</StartTestTime>
+		<StartDateTime>Feb 06 09:45 GMT Standard Time</StartDateTime>
+		<StartTestTime>1675676722</StartTestTime>
 		<TestList>
 			<Test>./init</Test>
 			<Test>./simple_increment</Test>
@@ -41,7 +41,7 @@
 			<FullCommandLine>C:\Users\alist\OneDrive\Documents\Github\fifo_buffer\build\init.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.129406</Value>
+					<Value>0.177225</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -67,7 +67,7 @@
 			<FullCommandLine>C:\Users\alist\OneDrive\Documents\Github\fifo_buffer\build\simple_increment.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0995269</Value>
+					<Value>0.134884</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -93,7 +93,7 @@
 			<FullCommandLine>C:\Users\alist\OneDrive\Documents\Github\fifo_buffer\build\check_wrap_around.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0758895</Value>
+					<Value>0.103101</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -109,9 +109,9 @@
 				</NamedMeasurement>
 				<Measurement>
 					<Value>set pointer to last position then increment to check for wrap around
-00ECAAE0
-00ECA6E0
-00ECA6E0
+002BAAE0
+002BA6E0
+002BA6E0
 </Value>
 				</Measurement>
 			</Results>
@@ -123,7 +123,7 @@
 			<FullCommandLine>C:\Users\alist\OneDrive\Documents\Github\fifo_buffer\build\check_wrap_around.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0535474</Value>
+					<Value>0.0729013</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -139,9 +139,9 @@
 				</NamedMeasurement>
 				<Measurement>
 					<Value>set pointer to last position then increment to check for wrap around
-00ECAAE0
-00ECA6E0
-00ECA6E0
+002BAAE0
+002BA6E0
+002BA6E0
 </Value>
 				</Measurement>
 			</Results>
@@ -153,7 +153,7 @@
 			<FullCommandLine>C:\Users\alist\OneDrive\Documents\Github\fifo_buffer\build\check_buf_len_1.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0490327</Value>
+					<Value>0.0678907</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -168,8 +168,8 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value>0011A6A8
-0011A6A0
+					<Value>002AA6A8
+002AA6A0
 </Value>
 				</Measurement>
 			</Results>
@@ -181,7 +181,7 @@
 			<FullCommandLine>C:\Users\alist\OneDrive\Documents\Github\fifo_buffer\build\check_buf_len_2.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0301981</Value>
+					<Value>0.0411399</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -196,14 +196,14 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value>0068A6A8
-0068A6A0
+					<Value>007CA6A8
+007CA6A0
 </Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Feb 06 09:31 GMT Standard Time</EndDateTime>
-		<EndTestTime>1675675876</EndTestTime>
+		<EndDateTime>Feb 06 09:45 GMT Standard Time</EndDateTime>
+		<EndTestTime>1675676722</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

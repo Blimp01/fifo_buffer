@@ -1,7 +1,7 @@
-init 1 0.129406
-simple_increment 1 0.0995269
-check_wrap_around 1 0.0758895
-check_buffer_full 1 0.0535474
-check_buf_len_1 1 0.0490327
-check_buf_len_2 1 0.0301981
+init 2 0.153316
+simple_increment 2 0.117206
+check_wrap_around 2 0.0894953
+check_buffer_full 2 0.0632244
+check_buf_len_1 2 0.0584617
+check_buf_len_2 2 0.035669
 ---

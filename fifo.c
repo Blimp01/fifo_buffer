@@ -17,19 +17,17 @@ void increment_write_pointer(fifo_struct * fifo)
         //If the write pointer is at the end of the buffer, jump back to beginning
         if (fifo->wp == (fifo->fifo_buf + FIFO_BUFFER_SIZE))
         {
-            fifo->wp = &fifo->fifo_buf;
+            fifo->wp = fifo->fifo_buf;
         }
         else //increment the buffer
         {
             fifo->wp++;    
         }
-
-        //has the wp reached the rp, in which case the buffer if full.
+        //has the wp reached the rp, this means the buffer is full
         if (fifo->wp == fifo->rp)
         {
             fifo->full_flag = BUFFER_FULL_FLAG_SET;
         }
-
     }
     else
     {
@@ -40,6 +38,11 @@ void increment_write_pointer(fifo_struct * fifo)
 void increment_read_pointer(fifo_struct *fifo)
 {
     fifo->rp++;
+    //If the read pointer is at the end of the buffer, jump back to beginning
+    if (fifo->rp == (fifo->fifo_buf + FIFO_BUFFER_SIZE))
+    {
+        fifo->rp = fifo->fifo_buf;
+    }
     //If we have read any byte the buffer is no longer full
     fifo->full_flag = BUFFER_FULL_FLAG_NOT_SET;
 }
