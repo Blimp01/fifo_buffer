@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "fifo_buffer.exe"
+			"path" : "check_wrap_around.exe"
 		},
 		{
-			"path" : "fifo_buffer.pdb"
+			"path" : "check_wrap_around.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -38,23 +38,24 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1"
 				}
 			],
-			"language" : "CXX",
+			"language" : "C",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
-	"id" : "fifo_buffer::@6890427a1f51a3e7e1df",
+	"id" : "check_wrap_around::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1",
 				"role" : "flags"
 			},
 			{
@@ -66,10 +67,10 @@
 				"role" : "libraries"
 			}
 		],
-		"language" : "CXX"
+		"language" : "C"
 	},
-	"name" : "fifo_buffer",
-	"nameOnDisk" : "fifo_buffer.exe",
+	"name" : "check_wrap_around",
+	"nameOnDisk" : "check_wrap_around.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -81,7 +82,15 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2
 			]
 		}
 	],
@@ -90,8 +99,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "tests/check_wrap_around.c",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "fifo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "fifo.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

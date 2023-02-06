@@ -26,7 +26,12 @@ C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/Continuous
 C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/ContinuousCoverage.dir
 C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/ContinuousMemCheck.dir
 C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/ContinuousSubmit.dir
-C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/fifo_buffer.dir
+C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/init.dir
+C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/simple_increment.dir
+C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/check_wrap_around.dir
+C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/check_buffer_full.dir
+C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/check_buf_len_1.dir
+C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/check_buf_len_2.dir
 C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/package.dir
 C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/package_source.dir
 C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build/CMakeFiles/test.dir

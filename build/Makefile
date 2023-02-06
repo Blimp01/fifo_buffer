@@ -500,41 +500,223 @@ ContinuousSubmit\fast:
 .PHONY : ContinuousSubmit\fast
 
 #=============================================================================
-# Target rules for targets named fifo_buffer
+# Target rules for targets named init
 
 # Build rule for target.
-fifo_buffer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) fifo_buffer
-.PHONY : fifo_buffer
+init: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) init
+.PHONY : init
 
 # fast build rule for target.
-fifo_buffer\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fifo_buffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\fifo_buffer.dir\build
-.PHONY : fifo_buffer\fast
+init\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\init.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\init.dir\build
+.PHONY : init\fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+#=============================================================================
+# Target rules for targets named simple_increment
+
+# Build rule for target.
+simple_increment: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) simple_increment
+.PHONY : simple_increment
+
+# fast build rule for target.
+simple_increment\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_increment.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simple_increment.dir\build
+.PHONY : simple_increment\fast
+
+#=============================================================================
+# Target rules for targets named check_wrap_around
+
+# Build rule for target.
+check_wrap_around: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) check_wrap_around
+.PHONY : check_wrap_around
+
+# fast build rule for target.
+check_wrap_around\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_wrap_around.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_wrap_around.dir\build
+.PHONY : check_wrap_around\fast
+
+#=============================================================================
+# Target rules for targets named check_buffer_full
+
+# Build rule for target.
+check_buffer_full: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) check_buffer_full
+.PHONY : check_buffer_full
+
+# fast build rule for target.
+check_buffer_full\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buffer_full.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buffer_full.dir\build
+.PHONY : check_buffer_full\fast
+
+#=============================================================================
+# Target rules for targets named check_buf_len_1
+
+# Build rule for target.
+check_buf_len_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) check_buf_len_1
+.PHONY : check_buf_len_1
+
+# fast build rule for target.
+check_buf_len_1\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_1.dir\build
+.PHONY : check_buf_len_1\fast
+
+#=============================================================================
+# Target rules for targets named check_buf_len_2
+
+# Build rule for target.
+check_buf_len_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) check_buf_len_2
+.PHONY : check_buf_len_2
+
+# fast build rule for target.
+check_buf_len_2\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_2.dir\build
+.PHONY : check_buf_len_2\fast
+
+fifo.obj: fifo.c.obj
+.PHONY : fifo.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fifo_buffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\fifo_buffer.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+fifo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\init.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\init.dir\fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_increment.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simple_increment.dir\fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_wrap_around.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_wrap_around.dir\fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buffer_full.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buffer_full.dir\fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_1.dir\fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_2.dir\fifo.c.obj
+.PHONY : fifo.c.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+fifo.i: fifo.c.i
+.PHONY : fifo.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fifo_buffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\fifo_buffer.dir\main.cpp.i
-.PHONY : main.cpp.i
+fifo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\init.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\init.dir\fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_increment.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simple_increment.dir\fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_wrap_around.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_wrap_around.dir\fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buffer_full.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buffer_full.dir\fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_1.dir\fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_2.dir\fifo.c.i
+.PHONY : fifo.c.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+fifo.s: fifo.c.s
+.PHONY : fifo.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fifo_buffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\fifo_buffer.dir\main.cpp.s
-.PHONY : main.cpp.s
+fifo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\init.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\init.dir\fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_increment.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simple_increment.dir\fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_wrap_around.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_wrap_around.dir\fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buffer_full.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buffer_full.dir\fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_1.dir\fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_2.dir\fifo.c.s
+.PHONY : fifo.c.s
+
+tests\Increment_by_1_test.obj: tests\Increment_by_1_test.c.obj
+.PHONY : tests\Increment_by_1_test.obj
+
+# target to build an object file
+tests\Increment_by_1_test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_increment.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simple_increment.dir\tests\Increment_by_1_test.c.obj
+.PHONY : tests\Increment_by_1_test.c.obj
+
+tests\Increment_by_1_test.i: tests\Increment_by_1_test.c.i
+.PHONY : tests\Increment_by_1_test.i
+
+# target to preprocess a source file
+tests\Increment_by_1_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_increment.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simple_increment.dir\tests\Increment_by_1_test.c.i
+.PHONY : tests\Increment_by_1_test.c.i
+
+tests\Increment_by_1_test.s: tests\Increment_by_1_test.c.s
+.PHONY : tests\Increment_by_1_test.s
+
+# target to generate assembly for a file
+tests\Increment_by_1_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_increment.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\simple_increment.dir\tests\Increment_by_1_test.c.s
+.PHONY : tests\Increment_by_1_test.c.s
+
+tests\check_buffer_full.obj: tests\check_buffer_full.c.obj
+.PHONY : tests\check_buffer_full.obj
+
+# target to build an object file
+tests\check_buffer_full.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buffer_full.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buffer_full.dir\tests\check_buffer_full.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_1.dir\tests\check_buffer_full.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_2.dir\tests\check_buffer_full.c.obj
+.PHONY : tests\check_buffer_full.c.obj
+
+tests\check_buffer_full.i: tests\check_buffer_full.c.i
+.PHONY : tests\check_buffer_full.i
+
+# target to preprocess a source file
+tests\check_buffer_full.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buffer_full.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buffer_full.dir\tests\check_buffer_full.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_1.dir\tests\check_buffer_full.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_2.dir\tests\check_buffer_full.c.i
+.PHONY : tests\check_buffer_full.c.i
+
+tests\check_buffer_full.s: tests\check_buffer_full.c.s
+.PHONY : tests\check_buffer_full.s
+
+# target to generate assembly for a file
+tests\check_buffer_full.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buffer_full.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buffer_full.dir\tests\check_buffer_full.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_1.dir\tests\check_buffer_full.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_buf_len_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_buf_len_2.dir\tests\check_buffer_full.c.s
+.PHONY : tests\check_buffer_full.c.s
+
+tests\check_wrap_around.obj: tests\check_wrap_around.c.obj
+.PHONY : tests\check_wrap_around.obj
+
+# target to build an object file
+tests\check_wrap_around.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_wrap_around.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_wrap_around.dir\tests\check_wrap_around.c.obj
+.PHONY : tests\check_wrap_around.c.obj
+
+tests\check_wrap_around.i: tests\check_wrap_around.c.i
+.PHONY : tests\check_wrap_around.i
+
+# target to preprocess a source file
+tests\check_wrap_around.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_wrap_around.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_wrap_around.dir\tests\check_wrap_around.c.i
+.PHONY : tests\check_wrap_around.c.i
+
+tests\check_wrap_around.s: tests\check_wrap_around.c.s
+.PHONY : tests\check_wrap_around.s
+
+# target to generate assembly for a file
+tests\check_wrap_around.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check_wrap_around.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\check_wrap_around.dir\tests\check_wrap_around.c.s
+.PHONY : tests\check_wrap_around.c.s
+
+tests\init_test.obj: tests\init_test.c.obj
+.PHONY : tests\init_test.obj
+
+# target to build an object file
+tests\init_test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\init.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\init.dir\tests\init_test.c.obj
+.PHONY : tests\init_test.c.obj
+
+tests\init_test.i: tests\init_test.c.i
+.PHONY : tests\init_test.i
+
+# target to preprocess a source file
+tests\init_test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\init.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\init.dir\tests\init_test.c.i
+.PHONY : tests\init_test.c.i
+
+tests\init_test.s: tests\init_test.c.s
+.PHONY : tests\init_test.s
+
+# target to generate assembly for a file
+tests\init_test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\init.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\init.dir\tests\init_test.c.s
+.PHONY : tests\init_test.c.s
 
 # Help Target
 help:
@@ -575,10 +757,27 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
-	@echo ... fifo_buffer
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... check_buf_len_1
+	@echo ... check_buf_len_2
+	@echo ... check_buffer_full
+	@echo ... check_wrap_around
+	@echo ... init
+	@echo ... simple_increment
+	@echo ... fifo.obj
+	@echo ... fifo.i
+	@echo ... fifo.s
+	@echo ... tests/Increment_by_1_test.obj
+	@echo ... tests/Increment_by_1_test.i
+	@echo ... tests/Increment_by_1_test.s
+	@echo ... tests/check_buffer_full.obj
+	@echo ... tests/check_buffer_full.i
+	@echo ... tests/check_buffer_full.s
+	@echo ... tests/check_wrap_around.obj
+	@echo ... tests/check_wrap_around.i
+	@echo ... tests/check_wrap_around.s
+	@echo ... tests/init_test.obj
+	@echo ... tests/init_test.i
+	@echo ... tests/init_test.s
 .PHONY : help
 
 
