@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1433~1.316\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\fifo_buffer.dir\\main.cpp.obj /FdCMakeFiles\\fifo_buffer.dir\\ /FS -c C:\\Users\\alist\\OneDrive\\Documents\\Github\\fifo_buffer\\main.cpp",
+  "file": "C:/Users/alist/OneDrive/Documents/Github/fifo_buffer/main.cpp"
+}
+]
