@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "fifo.h"
+#include "../fifo.h"
 
 
 fifo_struct fifo;

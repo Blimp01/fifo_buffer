@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "fifo.h"
-
+#include "../fifo.h"
 
 fifo_struct fifo;
 
@@ -8,12 +7,10 @@ int main()
 {
     init_fifo_buf(&fifo);
 
-    fifo.wp = fifo.fifo_buf + 10U;
-    fifo.rp = fifo.fifo_buf + 5U; 
+    uint8_t data_1[1] = "A";
 
-    unsigned a = buf_len(&fifo);
 
-    if (a == 5U)
+    if (push_data(&fifo, data_1) == FIFO_ERROR_OVERFLOW)
     {
         return 0;
     }
@@ -22,5 +19,5 @@ int main()
         return 1;
     }
 
-
+ 
 }

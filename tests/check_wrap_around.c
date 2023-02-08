@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "fifo.h"
+#include "../fifo.h"
 
 
 fifo_struct fifo;
@@ -20,7 +20,7 @@ int main()
     printf("%p\n",fifo.wp);
     printf("%p\n",fifo.fifo_buf);
 
-    if (fifo.full_flag == BUFFER_FULL_FLAG_NOT_SET)
+    if (fifo.full_flag == false)
     {
         if (fifo.wp == fifo.fifo_buf)
         {

@@ -1,12 +1,11 @@
+#include <stdio.h>
 #include "../fifo.h"
-
-fifo_struct fifo;
 
 int main()
 {
-    init_fifo_buf(&fifo);
+    uint8_t * a = NULL;
 
-    if (fifo.rp == fifo.fifo_buf && fifo.wp == fifo.fifo_buf)
+    if (init_fifo_buf(a) == FIFO_ERROR_PTR)
     {
         return 0;
     }
@@ -14,5 +13,4 @@ int main()
     {
         return 1;
     }
-
 }
